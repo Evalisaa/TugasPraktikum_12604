@@ -1,0 +1,143 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Reservation Hotel Room</title>
+  <style type="text/css">
+    body {
+      font-family: 'Times New Roman', Times, serif;
+      background-image: url("hotel.jpeg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      font-size: 16px;
+      line-height: 1.6;
+      color: #333;
+      padding: 20px;
+    }
+
+    h2 {
+      font-family: 'Times New Roman', Times, serif;
+      font-weight: 700;
+      color: #1a4732;
+      text-align: center;
+      margin-bottom: 30px;
+      padding: 10px;
+      text-shadow: 2px 2px 5px rgb(255, 255, 255);
+    }
+
+    fieldset {
+      position: relative;
+      width: 450px;
+      margin: 40px auto 20px;
+      padding: 30px 20px 20px;
+      border: 20px solid transparent;
+      border-image: url("border.png") 40 round;
+      background-color: rgba(255, 255, 255, 0.9);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    }
+
+    legend {
+      position: static;
+      color: #175248;
+      padding: 5px 10px;
+      margin: -40px -20px;
+      font-family: 'Times New Roman', Times, serif;
+      font-weight: 700;
+      font-size: 18px;
+      border-radius: 5px;
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+    }
+
+    input[type="text"],
+    input[type="date"],
+    select {
+      font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #bdc3c7;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+
+    input[type="radio"] {
+      width: auto;
+      margin-right: 10px;
+    }
+
+    input[type="submit"] {
+      font-family: 'Times New Roman', Times, serif;
+      background-color: #1e6a51;
+      color: white;
+      padding: 12px 30px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: 700;
+      display: block;
+      margin: 20px auto;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #043b2e;
+    }
+  </style>
+</head>
+
+<body>
+  <h2>RESERVATION HOTEL ROOM</h2>
+  <form action="#" method="post">
+    <fieldset>
+      <legend>Personal Data</legend>
+      Name<br />
+      <input type="text" name="name" /><br />
+      Gender<br />
+      <input type="text" name="gender" /><br />
+      Email Address<br />
+      <input type="text" name="email" /><br />
+      Telp Number<br />
+      <input type="text" name="telp" /><br />
+    </fieldset>
+    <fieldset>
+      <legend>Reservation Room Form</legend>
+      Reservation Name<br />
+      <input type="text" name="reservator_name" /><br />
+      Booking Date<br />
+      <input type="date" name="booking_date" /><br />
+      Room Type<br />
+      <select name="room_type">
+        <option>Deluxe</option>
+        <option>Standard</option>
+        <option>Suite</option>
+      </select><br />
+      Bed Type<br />
+      <select name="bed_type">
+        <option>Single bed</option>
+        <option>Double bed</option>
+      </select><br />
+      Breakfast<br />
+      <input type="radio" name="breakfast" value="with" checked="checked" /> With Breakfast
+      <input type="radio" name="breakfast" value="without" /> Without Breakfast<br />
+    </fieldset>
+    <fieldset>
+      <legend>Payment</legend>
+      Check-in Date<br />
+      <input type="date" name="checkin" /><br />
+      Check-out Date<br />
+      <input type="date" name="checkout" /><br />
+      Payment Method<br />
+      <select name="payment">
+        <option>Cash</option>
+        <option>Credit</option>
+        <option>Transfer</option>
+      </select><br />
+    </fieldset>
+    <input type="submit" value="Submit" />
+  </form>
+</body>
+
+</html>
